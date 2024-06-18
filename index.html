@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Alphanumeric Qabbala DBs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="styles.css">
+  <!--<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">-->
+</head>
+<body onload="toggleBoxes()">
+<noscript>JavaScript Required</noscript>
+<div class="top" id="head">
+<h2><center>Alphanumeric Qabbala</center></h2>
+<form onsubmit="return false;"><input type="text" id="input" placeholder="Input Test Phrase" spellcheck="false" autofocus></form>
+<dl>
+<div><dt>Sum (AQ)</dt><dd id="result">0</dd></div>
+<hr>
+<div><dt>Matches</dt></div>
+<div><dt><br></dt></div>
+<div><dt><b style="text-align: left;">Select Database:</b></dt></div>
+<div><dt><input type="checkbox" id="showaqqa"  onclick="toggleBoxes()" checked style="height:19px;width:19px;">AQQA</dt><dd id="aqqacount">0</dd></div>
+<div><dt><input type="checkbox" id="showaqio"  onclick="toggleBoxes()" style="height:19px;width:19px;">AQ.io</dt><dd id="aqiocount">0</dd></div>
+<div><dt><input type="checkbox" id="showlam93"  onclick="toggleBoxes()" style="height:19px;width:19px;">Lam-UFO-93</dt><dd id="lam93count">0</dd></div>
+<div><dt><input type="checkbox" id="showurban"  onclick="toggleBoxes()" style="height:19px;width:19px;">Urbanomic</dt><dd id="urbancount">0</dd></div>
+<hr>
+<div class="out" id="aqqa" style="display:none;"><strong>AQQA</strong><div><ol id="aqqamatch">N/A</ol></div></div>
+<div class="out" id="aqio" style="display:none;"><strong>AQ.io</strong><div><ol id="aqiomatch">N/A</ol></div></div>
+<div class="out" id="lam93" style="display:none;"><strong>Lam-UFO-93</strong><div><ol id="lam93match">N/A</ol></div></div>
+<div class="out" id="urban" style="display:none;"><strong>Urbanomic</strong><div><ol id="urbanmatch">N/A</ol></div></div>
+</dl>
+<nav>
+	<a href="about">? <span>What is This</span></a>
+	<a href="https://gematriaresearch.blogspot.com/" target="_blank"><span>Gematria Blog</span></a>
+</nav>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="boxes.js"></script>
+<script src="data.js"></script>
+<script src="data2.js"></script>
+<script src="results.js"></script>
+<script src="cipher.js"></script>
+</body>
+</html>
