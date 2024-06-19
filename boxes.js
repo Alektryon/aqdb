@@ -27,6 +27,14 @@ function toggleBoxes() {
     div.style.display = "none";
   }
 
+  var checkBox = document.getElementById("showliberal");
+  var div = document.getElementById("liberal");
+  if (checkBox.checked == true){
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
+
   var checkBox = document.getElementById("showurban");
   var div = document.getElementById("urban");
   if (checkBox.checked == true){

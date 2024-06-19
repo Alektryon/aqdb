@@ -53,6 +53,19 @@ input.oninput = function() {
 			lam93match.innerHTML = "N/A";
 		}
 
+		// Liber AL phrases //
+		if (typeof liberal[a] !== 'undefined') {
+			liberalcount.innerHTML = liberal[a].length;
+			liberalmatch.innerHTML = "";
+			Object.keys(liberal[a]).forEach(function(key) { 
+				liberalmatch.innerHTML += "<li>" + liberal[a][key] + "</li>"; 
+			})
+		}
+		else {
+			liberalcount.innerHTML = 0;
+			liberalmatch.innerHTML = "N/A";
+		}
+
 		// Urbanomic //
 		if (typeof urban[a] !== 'undefined') {
 			urbancount.innerHTML = urban[a].length;
