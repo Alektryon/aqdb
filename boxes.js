@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 function toggleBoxes() {
 
-  var checkBox = document.getElementById("showaqqa");
-  var div = document.getElementById("aqqa");
+  var checkBox = document.getElementById("showalek");
+  var div = document.getElementById("alek");
   if (checkBox.checked == true){
     div.style.display = "block";
   } else {

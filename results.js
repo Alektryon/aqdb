@@ -14,17 +14,17 @@ input.oninput = function() {
 	result.innerHTML = a;
 	
 	
-		// AQQA //
-		if (typeof aqqa[a] !== 'undefined') {
-			aqqacount.innerHTML = aqqa[a].length;
-			aqqamatch.innerHTML = "";
-			Object.keys(aqqa[a]).forEach(function(key) { 
-				aqqamatch.innerHTML += "<li>" + aqqa[a][key] + "</li>"; 
+		// Alektryon //
+		if (typeof alek[a] !== 'undefined') {
+			alekcount.innerHTML = alek[a].length;
+			alekmatch.innerHTML = "";
+			Object.keys(alek[a]).forEach(function(key) { 
+				alekmatch.innerHTML += "<li>" + alek[a][key] + "</li>"; 
 			})
 		}
 		else {
-			aqqacount.innerHTML = 0;
-			aqqamatch.innerHTML = "N/A";
+			alekcount.innerHTML = 0;
+			alekmatch.innerHTML = "N/A";
 		}
 
 		// AQ.io //
