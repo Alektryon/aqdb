@@ -53,7 +53,7 @@ input.oninput = function() {
 			lam93match.innerHTML = "N/A";
 		}
 
-		// Liber AL phrases //
+		// Liber AL //
 		if (typeof liberal[a] !== 'undefined') {
 			liberalcount.innerHTML = liberal[a].length;
 			liberalmatch.innerHTML = "";
@@ -64,6 +64,19 @@ input.oninput = function() {
 		else {
 			liberalcount.innerHTML = 0;
 			liberalmatch.innerHTML = "N/A";
+		}
+
+		// Thelemic Libri //
+		if (typeof libri[a] !== 'undefined') {
+			libricount.innerHTML = libri[a].length;
+			librimatch.innerHTML = "";
+			Object.keys(libri[a]).forEach(function(key) { 
+				librimatch.innerHTML += "<li>" + libri[a][key] + "</li>"; 
+			})
+		}
+		else {
+			libricount.innerHTML = 0;
+			librimatch.innerHTML = "N/A";
 		}
 
 		// Urbanomic //
